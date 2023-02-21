@@ -1,0 +1,10 @@
+Method 01: Fill the Matrix
+
+
+class Solution
+{
+	public static int minIteration(int N, int M, int x, int y){
+		//code here
+		return Math.max(N-x, x-1)+Math.max(M-y, y-1);
+	}
+}
