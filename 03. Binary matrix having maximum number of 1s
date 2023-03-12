@@ -1,0 +1,26 @@
+Methos 01: Binary matrix having maximum number of 1s
+
+
+class Solution {
+    public int[] findMaxRow(int mat[][], int N) {
+        // code here
+        int count=0, overAll=0;
+        int max[]=new int[2];
+        for(int i=0;i<mat.length;i++){
+            for(int j=0;j<mat[0].length;j++){
+            if(mat[i][j]==1){
+            count++;
+            }
+        }
+        
+        if(count>overAll){
+            overAll=count;
+            max[0]=i;
+            max[1]=overAll;
+        }
+        count=0;
+        }
+        return max;
+        
+    }
+};
